@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grids</title>
+    <style>
+        body{
+            background-color: rgb(15, 15, 15);
+        }
+      .container {
+        /* background-color: rgb(5, 5, 5); */
+        border: 4px rgb(255, 255, 255) solid;
+        padding: 40px;
+        display: grid;
+        /* grid-template-columns: 20% auto auto;
+        grid-template-rows: 200px auto 100px; */
+        grid-template: 100px 100px / auto auto; /*short hand*/
+        grid-row-gap: 30px;
+        grid-column-gap: 40px;
+      }
+
+      .item {
+        /* border: 2px solid orange; */
+        padding: 10px;
+        background-color: rgb(255, 255, 255);
+      }
+
+      #i1 {
+        /* background-color: blue; */
+      }
+
+
+      #i3 {
+        /* background-color: red; */
+        /* grid-row-start: 2;
+        grid-row-end: 6; */
+        /* grid-row: 3/span 2; */
+        /* grid-column-start: 3; */
+      }
+
+      #i5 {
+        /* grid-column: 3/ span 1; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item" id="i1">1</div>
+      <div class="item" id="i2">2</div>
+      <div class="item" id="i3">3</div>
+      <div class="item" id="i4">4</div>
+      <div class="item" id="i5">5</div>
+      <div class="item">6</div>
+      <div class="item">7</div>
+      <div class="item">8</div>
+      <div class="item">9</div>
+      <div class="item">10</div>
+    </div>
+  </body>
+</html>

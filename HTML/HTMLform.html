@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body>
+    <form action="" method="get">
+      <!-- method has a size of 30000 characters.(data visible in URL) 
+        post has no size limitation.(data not visible) 
+        -->
+      <label for="uname">Enter Name:</label>
+      <input
+        type="text"
+        name="uname"
+        id="uname"
+        size="30"
+        maxlength="40"
+        placeholder="e.g. Harry Potter"
+        value=""
+        required
+      />
+      <br />
+      <br />
+
+      <label for="pass">Enter Password:</label>
+      <input
+        type="password"
+        name="pass"
+        id="pass"
+        placeholder="e.g. Platform&93/4"
+        required
+      />
+      <br />
+      <br />
+
+      <label for="mail">Enter Email:</label>
+      <input
+        type="email"
+        name="mail"
+        id="mail"
+        size="30"
+        placeholder="e.g. theboywholived@hogwarts.com"
+      />
+      <br />
+      <br />
+
+      <label for="hobby">Choose your subject </label>
+      <input type="checkbox" name="subject" id="subject" value="Dark Arts" />
+      Defense against dark arts
+      <input type="checkbox" name="subject" id="subject" value="Potion" />
+      Potion brewing
+      <input
+        type="checkbox"
+        name="subject"
+        id="subject"
+        value="Spell"
+        checked
+      />
+      Spell Casting (Charms)
+      <br />
+      <br />
+
+      <label for="house">Choose your House: </label>
+      <input type="radio" name="house" id="house1" value="Griffyindor" />
+      <label for="house1">Griffyindor</label>
+      <input type="radio" name="house" id="house2" value="Hufflepuff" />
+      <label for="house2">Hufflepuff</label>
+      <input type="radio" name="house" id="house3" value="Slytherin" />
+      <label for="house3">Slytherin</label>
+      <input type="radio" name="house" id="house4" value="Ravenclaw" />
+      <label for="house4">Ravenclaw</label>
+      <br />
+      <br />
+
+      <label for="request">Request a item/an assitance</label>
+      <select name="request" id="request">
+        <option value="choose">Choose your option</option>
+        <option value="wand">Wand</option>
+        <option value="pet">Pet</option>
+        <option value="broom">Nimbus 2000</option>
+        <option value="others">Others</option>
+      </select>
+      <br />
+      <br />
+
+      <label for="filesel">Choose file: </label>
+      <input type="file" name="filesel" id="filesel" />
+      <br />
+      <br />
+
+      <label for="review">Share Feedback:</label><br />
+      <textarea
+        rows="3"
+        name="review"
+        id="review"
+        placeholder="It's LeviOoosa! not LevioSAaaa..."
+      ></textarea>
+      <br />
+      <br />
+
+      <input type="reset" name="resetform" id="resetform" value="Reset Form" />
+      <input type="submit" name="submit" id="submit" value="Submit Form" />
+      <input
+        type="image"
+        src="./images/avatar-icon-free-14.jpg"
+        height="90"
+        width="60"
+        name="imagesel"
+        id="imagesel"
+        style="margin: -25px 0"
+      />
+    </form>
+  </body>
+</html>
